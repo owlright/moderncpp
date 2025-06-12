@@ -7,3 +7,4 @@ build/
 *.o
 *.s
 .idea/
+.DS_Store

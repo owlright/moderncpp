@@ -12,7 +12,7 @@ endif()
 file(GLOB SUBDIRS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "*")
 list(REMOVE_ITEM SUBDIRS "include")
 list(REMOVE_ITEM SUBDIRS "cpp20")
-
+list(REMOVE_ITEM SUBDIRS "cpp17")
 # # Include all .hpp files in the include/ directory
 # include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
@@ -41,3 +41,4 @@ foreach(SUBDIR ${SUBDIRS})
 endforeach()
 
 add_subdirectory(cpp20)
+add_subdirectory(cpp17)
